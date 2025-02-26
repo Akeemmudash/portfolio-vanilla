@@ -1,15 +1,23 @@
 import "./style.css";
 
-function toggleNavMenu() {
-  hamburger.classList.toggle("open");
-}
-
-// function fadeImage(image){
-//   image
-// }
+window.addEventListener("load", () => {
+  document.getElementById("preloader").classList.add("hidden");
+});
 
 const hamburger = document.getElementById("hamburger");
+const mobileNav = document.getElementById("nav-sm");
+const overlay = document.getElementById("overlay");
+const body = document.body;
+
 hamburger.addEventListener("click", toggleNavMenu);
+overlay.addEventListener("click", toggleNavMenu);
+
+function toggleNavMenu() {
+  const isOpen = mobileNav.classList.toggle("show");
+  hamburger.classList.toggle("open");
+  overlay.classList.toggle("show");
+  body.style.overflow = isOpen ? "hidden" : "";
+}
 
 const images = document.querySelectorAll(".about__image");
 let currentIndex = 0;
