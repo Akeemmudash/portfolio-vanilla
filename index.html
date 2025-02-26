@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Portfolio Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="container navbar">
+      <a href="/" class="logo"><span class="logo__child-text">Ak</span>eem</a>
+
+      <ul class="nav__links not-mobile">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contactme">Contact</a></li>
+      </ul>
+      <button class="download-cv__btn not-mobile">Download Cv</button>
+      <button class="for-mobile" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <main class="container">
+      <section class="hero" id="home">
+        <div class="hero__text-content">
+          <h1>
+            <span class="font-playwright">I am</span><br />
+            <span class="">AKEEM MUDASHIRU</span><br />
+            <span class="">Frontend <br /><span class="">Developer</span></span>
+          </h1>
+        </div>
+        <div class="hero__banner">
+          <img src="/akeem.jpg" alt="Akeem" class="hero__image" />
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="">
+          <div class="about__img--carousel">
+            <img src="/red-shirt.jpg" alt="Akeem" class="about__image" />
+            <img src="/native.jpg" alt="Akeem" class="about__image" />
+            <img src="/campus.jpg" alt="Akeem" class="about__image" />
+            <img src="/rufus.jpg" alt="Akeem" class="about__image" />
+          </div>
+        </div>
+        <div class="">
+          <div class="about__text-content">
+            <h2 class="font-playwright">about me</h2>
+            <div class="about__text--body">
+              <p>
+                I am <strong><em>Akeem Mudashiru</em></strong
+                >, a highly motivated
+                <strong>Computer Engineering</strong> student with a passion for
+                building intuitive, high-performance web applications. My
+                journey in technology began with a deep interest in
+                <strong>problem-solving</strong>, which led me to specialize in
+                <strong>frontend</strong> and
+                <strong>backend development</strong>. Through my experiences, I
+                have developed a strong foundation in <strong>React</strong>,
+                <strong>TypeScript</strong>, <strong>Node.js</strong>, and
+                modern web technologies.
+              </p>
+
+              <p>
+                Currently, I am a <strong>Frontend & Backend Intern</strong> at
+                <strong>HNG Internship</strong>, where I build
+                <strong>AI-powered applications</strong>,
+                <strong>event ticketing platforms</strong>, and
+                <strong>optimize system performance</strong>. Additionally, as a
+                <strong>Junior Frontend Developer</strong> at
+                <strong>PluralCode Institute</strong>, I have worked on
+                <strong>responsive landing pages</strong>,
+                <strong>API integrations</strong>, and
+                <strong>performance optimizations</strong>, improving load times
+                and user experience across various platforms.
+              </p>
+
+              <p>
+                I take pride in my ability to
+                <strong>translate complex designs</strong> into
+                <strong>functional</strong> and
+                <strong>scalable applications</strong>. My expertise in
+                <strong>React</strong>, <strong>Zustand</strong>,
+                <strong>Tailwind CSS</strong>, and
+                <strong>RESTful API integration</strong> allows me to develop
+                <strong>seamless</strong>,
+                <strong>user-friendly interfaces</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+
+        <div class="projects">
+          <div class="project">
+            <div class="">
+              <h3>Vescan Ecommerce</h3>
+              <p>
+                <strong>Vescan Ecommerce</strong> is a
+                <strong>B2C e-commerce marketplace</strong> currently in
+                development, aimed at delivering
+                <strong>vehicle parts and services</strong> to consumers. I was
+                responsible for implementing the
+                <strong>frontend design</strong> of this project at
+                <strong>PluralCode</strong>, utilizing modern web technologies
+                such as <strong>React</strong>, <strong>TanStack Query</strong>,
+                <strong>Axios</strong>, and <strong>Framer Motion</strong>.
+              </p>
+
+              <p>
+                Although the site's server is currently down, I incorporated
+                <strong>error handling mechanisms</strong> to ensure that
+                different sections of the site remain accessible, providing a
+                smoother <strong>user experience</strong> even in downtime
+                scenarios.
+              </p>
+              <p>
+                You can view a hosted copy of the site below:<br />
+                <a
+                  href="https://vescan.netlify.app/"
+                  target="_blank"
+                  class="view-link"
+                  >View</a
+                >
+              </p>
+            </div>
+
+            <div class="project__image">
+              <img src="/projects/vescan.png" alt="vescan" />
+            </div>
+          </div>
+          <div class="project">
+            <div class="">
+              <h3>Career Growth</h3>
+              <p>
+                CareerGrowth is a platform designed to help individuals gain
+                job-ready skills, access mentorship, and secure career
+                opportunities. I was responsible for developing this site using
+                modern web technologies such as <strong>React</strong>,
+                <strong>Tailwind CSS</strong>, <strong>React Hook Form</strong>,
+                <strong>Axios</strong>, and <strong>Framer Motion</strong>.
+              </p>
+              <p>
+                The site is currently down, but a hosted copy is available at
+                the link below.
+                <br />
+                <a
+                  href="https://career-growth.netlify.app/"
+                  target="_blank"
+                  class="view-link"
+                  >View</a
+                >
+              </p>
+            </div>
+
+            <div class="project__image">
+              <img src="/projects/career-growth.png" alt="career-growth" />
+            </div>
+          </div>
+          <div class="project">
+            <div class="">
+              <h3>Trade Center Prototype</h3>
+              <p>
+                Trade Center is a prototype e-commerce platform developed using
+                <strong>React</strong> and <strong>Framer Motion</strong>. The
+                design was translated from a Figma file with
+                <em>pixel-perfect</em> accuracy and made fully responsive, even
+                without dedicated mobile designs.
+              </p>
+
+              <p>
+                The hosted site is available at the link below.
+                <br />
+                <a
+                  href="https://trade-centerng.netlify.app/"
+                  target="_blank"
+                  class="view-link"
+                  >View</a
+                >
+              </p>
+            </div>
+
+            <div class="project__image">
+              <img src="/projects/tradecenter.png" alt="trade-center" />
+            </div>
+          </div>
+          <div class="project">
+            <div class="">
+              <h3>Conference Ticket Generator</h3>
+              <p>
+                The Conference Ticket Generator is a web application built with
+                <strong>React</strong> that allows users to generate
+                personalized conference tickets. Users can input their details,
+                upload an avatar, and receive a formatted ticket upon successful
+                submission. The form includes validation, accessibility
+                features, and state persistence to ensure a seamless user
+                experience. Uploaded avatars are stored on
+                <strong>Cloudinary</strong>.
+              </p>
+              <p>
+                Technologies used: <strong>Framer Motion</strong>,
+                <strong>React</strong>, and <strong>Tailwind CSS</strong>.
+              </p>
+
+              <p>
+                The hosted site is available at the link below.
+                <br />
+                <a
+                  href="https://trade-centerng.netlify.app/"
+                  target="_blank"
+                  class="view-link"
+                  >View</a
+                >
+              </p>
+            </div>
+
+            <div class="project__image">
+              <img
+                src="/projects/ticket-generator.png"
+                alt="ticket-generator"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contactme" class="contact">
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <p>
+            Feel free to reach out for collaborations, job opportunities, or
+            inquiries.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <strong>Email:</strong>
+              <a href="mailto:your.email@example.com">your.email@example.com</a>
+            </li>
+            <li>
+              <i class="fab fa-linkedin"></i>
+              <strong>LinkedIn:</strong>
+              <a href="https://linkedin.com/in/yourprofile" target="_blank"
+                >linkedin.com/in/yourprofile</a
+              >
+            </li>
+            <li>
+              <i class="fab fa-github"></i>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/yourgithub" target="_blank"
+                >github.com/yourgithub</a
+              >
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+              <strong>Twitter:</strong>
+              <a href="https://twitter.com/yourtwitter" target="_blank"
+                >@yourtwitter</a
+              >
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
