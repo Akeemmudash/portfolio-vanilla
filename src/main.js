@@ -1,13 +1,18 @@
 import "./style.css";
 
-window.addEventListener("load", () => {
-  document.getElementById("preloader").classList.add("hidden");
-});
-
 const hamburger = document.getElementById("hamburger");
 const mobileNav = document.getElementById("nav-sm");
 const overlay = document.getElementById("overlay");
 const body = document.body;
+
+window.addEventListener("load", () => {
+  document.getElementById("preloader").classList.add("hidden");
+});
+window.addEventListener("hashchange", () => {
+  if (mobileNav.classList.contains("show")) {
+    toggleNavMenu();
+  }
+});
 
 hamburger.addEventListener("click", toggleNavMenu);
 overlay.addEventListener("click", toggleNavMenu);
