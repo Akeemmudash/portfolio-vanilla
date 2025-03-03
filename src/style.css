@@ -406,7 +406,6 @@ h1 > span:nth-of-type(3) span {
   top: 0;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
@@ -424,12 +423,6 @@ h1 > span:nth-of-type(3) span {
 }
 .about__text--body > *:not(:last-child) {
   margin-bottom: 25px;
-}
-.about__image {
-}
-
-.about__image.fade {
-  opacity: 1;
 }
 
 @media screen and (max-width: 1023px) {
@@ -465,11 +458,20 @@ h1 > span:nth-of-type(3) span {
   align-items: center;
   font-size: 18px;
 }
-.skill i {
+.skill img {
+  object-fit: contain;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+}
+/* .skill i {
   font-size: 40px;
   color: #007bff;
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; */
+
 .custom-icon {
   width: 40px;
   height: 40px;
